@@ -1,0 +1,87 @@
+table tr td+td{
+    vertical-align: top;
+}
+
+th {
+    background-color: #70d660;
+    color: white;
+}
+
+form div.form-action-buttons{
+    text-align: left;
+}
+
+
+.list {
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    width: 650px;
+}
+
+.list th, td {
+    font-family: sans-serif;
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.list tr:hover {background-color:#f5f5f5;}
+
+
+.field {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.submit{
+    width: 30%;
+    background-color: #ddd;
+    color: #000;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-hide{
+    display: none;
+    position: fixed;
+    margin-top: 50px;
+    margin-left: 30px;
+}
+.button {
+    border-radius: 8px;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 6px 6px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 2px 1px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.button4 {
+    background-color: white;
+    color: black;
+    border: 2px solid #e7e7e7;
+}
+
+.button4:hover {background-color: #e7e7e7;}
+
+.label {
+    text-align: left;
+    font-weight: bold;
+    font-size: 14px;
+}

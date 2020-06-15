@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css"/>
+    <meta charset="UTF-8">
+    <title>Test</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td>
+            <table class="list">
+                <tr>
+                    <th id ='ID' onclick = sortCol('ID')> ID &#9650 </th>
+                    <th> Full name (<span id = 'Last name' onclick=sortCol(id)>Last name &#9650</span> /
+                        <span id = 'First name' onclick=sortCol(id)>First name &#9650</span> )
+                    </th>
+                    <th id ='Age' onclick=sortCol('Age')> Age &#9650
+                    </th>
+                    <th>
+                        <button class='button button4' onclick="showHide('block')">+ Person</button>
+                    </th>
+                </tr>
+                <tbody id="table"></tbody>
+            </table>
+        </td>
+        <td>
+            <form onsubmit="event.preventDefault(); onFormSubmit();" class='form-hide' id="hide">
+                <div class='label'>
+                    <label>ID :</label>
+                    <input class='field' name='ID' id='formID' placeholder='ID' required type="number"/>
+                </div>
+                <div class="label">
+                    <label>Full name : </label>
+                    <input class='field' name='Name' id='formName' placeholder='Full name' required type="text" maxlength="100"/>
+                </div>
+                <div class='label'>
+                    <label>Age :</label>
+                    <input class='field' name='Age' id='formAge' placeholder='Age' required maxlength="1000" type="number"/>
+                </div>
+
+                <div  class="form-action-buttons">
+                    <input class="button button4" type='submit' value='Submit'>
+                </div>
+            </form>
+        </td>
+    </tr>
+</table>
+<script type="text/javascript" src="script.js"></script>
+
+</body>
+</html>
